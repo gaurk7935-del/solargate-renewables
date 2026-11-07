@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Solargate Renewables</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav class="navbar container">
+<a href="index.html" class="logo">
+<div class="logo-icon">☀</div>
+<div><strong>SOLARGATE</strong><small>RENEWABLES</small></div>
+</a>
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="services.html">Our Services</a></li>
+<li><a class="active nav-contact" href="contact.html">Contact Us ↗</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="page-banner">
+<div class="container">
+<div class="eyebrow">WE ARE HERE TO HELP</div>
+<h1>Contact Us</h1>
+<p>Let's discuss your solar energy requirements.</p>
+</div>
+</section>
+
+<section class="section section-light">
+<div class="container">
+<div class="section-heading">
+<div class="eyebrow">GET IN TOUCH</div>
+<h2>Let's Start A Conversation</h2>
+<p>Have a question or want to explore solar energy? Contact Solargate Renewables.</p>
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-info">
+<h2>Company Information</h2>
+<p style="color:#718078;margin-top:10px;">We welcome your questions and business enquiries.</p>
+
+<div class="contact-item">
+<h3>🏢 Company</h3>
+<p>SOLARGATE RENEWABLES</p>
+</div>
+
+<div class="contact-item">
+<h3>👤 Owner</h3>
+<p>Amit</p>
+</div>
+
+<div class="contact-item">
+<h3>📍 Country</h3>
+<p>India</p>
+</div>
+
+<div class="contact-item">
+<h3>📞 Phone Number</h3>
+<p><a href="tel:+919634542141">+91 9634542141</a></p>
+</div>
+
+<div class="contact-item">
+<h3>💬 WhatsApp</h3>
+<p><a href="https://wa.me/919634542141" target="_blank">Chat With Us →</a></p>
+</div>
+
+<a href="https://wa.me/919634542141?text=Hello%20Solargate%20Renewables%2C%20I%20would%20like%20to%20know%20more%20about%20your%20solar%20solutions." target="_blank" class="btn">Message Us On WhatsApp</a>
+</div>
+
+<div class="contact-form">
+<h2>Send An Enquiry</h2>
+<p style="color:#718078;">Fill in your details to prepare your enquiry.</p>
+
+<form id="enquiryForm">
+<label for="name">Your Name</label>
+<input type="text" id="name" placeholder="Enter your full name" required>
+
+<label for="phone">Your Phone Number</label>
+<input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+<label for="service">Interested In</label>
+<select id="service" required>
+<option value="">Select a service</option>
+<option>Residential Solar</option>
+<option>Commercial Solar</option>
+<option>Solar Installation</option>
+<option>Solar Consultation</option>
+<option>Solar Maintenance</option>
+<option>Other Enquiry</option>
+</select>
+
+<label for="message">Your Message</label>
+<textarea id="message" placeholder="Tell us about your requirements..." required></textarea>
+
+<button type="submit" class="btn" style="width:100%;cursor:pointer;margin-top:20px;">
+Send Enquiry On WhatsApp →
+</button>
+</form>
+
+</div>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container">
+<h2>Your Solar Journey Starts Here.</h2>
+<p>Connect with Solargate Renewables today.</p>
+<a href="tel:+919634542141" class="btn">Call +91 9634542141</a>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div><h3>SOLARGATE RENEWABLES</h3><p>Powering a brighter and more sustainable future through renewable energy.</p></div>
+<div><h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Our Services</a></div>
+<div><h3>Contact Details</h3><p>Owner: Amit</p><a href="tel:+919634542141">+91 9634542141</a></div>
+</div>
+<div class="footer-bottom">© 2026 Solargate Renewables. All Rights Reserved.</div>
+</div>
+</footer>
+
+<script>
+function toggleMenu() {
+document.getElementById("navLinks").classList.toggle("show");
+}
+
+document.getElementById("enquiryForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const service = document.getElementById("service").value;
+  const message = document.getElementById("message").value.trim();
+
+  if (!name || !phone || !service || !message) {
+    alert("Please fill in all the fields.");
+    return;
+  }
+
+  const text =
+    "NEW ENQUIRY - SOLARGATE RENEWABLES\n\n" +
+    "Customer Name: " + name + "\n" +
+    "Phone Number: " + phone + "\n" +
+    "Interested In: " + service + "\n" +
+    "Message: " + message;
+
+  const whatsappURL =
+    "https://wa.me/919634542141?text=" + encodeURIComponent(text);
+
+  window.open(whatsappURL, "_blank");
+});
+</script>
+</body>
+</html>
+
+<!-- OFFICE LOCATION SECTION -->
+<section class="section section-light">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">FIND US</div>
+        <h2>Visit Our Office</h2>
+        <p>We are located in Chipiyana Buzurg, Uttar Pradesh.</p>
+      </div>
+  
+      <div class="card" style="text-align:center;">
+        <div class="card-icon" style="margin:auto auto 20px;">📍</div>
+  
+        <h3>SOLARGATE RENEWABLES</h3>
+  
+        <p>
+          Chipiyana Buzurg,<br>
+          Near Payal Farm House,<br>
+          Uttar Pradesh, India.
+        </p>
+  
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Payal+Farm+House+Chipiyana+Buzurg+Uttar+Pradesh"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn"
+          style="margin-top:20px;">
+          View Our Location on Google Maps →
+        </a>
+      </div>
+    </div>
+  </section>
+  
